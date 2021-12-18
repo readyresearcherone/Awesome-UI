@@ -1,0 +1,199 @@
+/* Global */
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+/* Menu */
+a:hover{
+	color:white;
+}
+#menu {
+  padding: 20px;
+  color: #c0ffee; /* Drink up! */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.menu-button a {
+  padding: 8px 20px;
+  background: #191919;
+  border-radius: 2px;
+  display: inline-block;
+}
+#menu nav a:hover {
+  color: white;
+}
+
+#menu-inner  {
+  padding: 1em;
+  border-radius: 33px;
+  background: #191919;
+  margin-top: -4px;
+  border-style: solid;
+  border-color:white;
+}
+#menu nav:after,
+#menu nav > ul > li > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#menu nav li {
+  padding: 2px 4px;
+}
+#menu nav > ul > li {
+  padding: 1em;
+}
+#menu nav > ul > li > ul > li {
+  float: left;
+  width: 20%;
+}
+#menu-filter {
+  text-align: center;
+   margin: 1em 0 2em 0;
+}
+
+
+/* Tweak layout */
+@media only screen 
+and (max-width: 500px) {
+  #menu nav > ul > li > ul > li {
+  	width: 50%;
+	}
+}
+@media only screen 
+and (min-width: 501px)
+and (max-width: 800px) {
+	#menu nav > ul > li > ul > li {
+  	width: 33%;
+	}
+}
+@media only screen 
+and (min-width: 801px)
+and (max-width: 1200px) {
+	#menu nav > ul > li > ul > li {
+  	width: 20%;
+	}
+}
+@media only screen 
+and (min-width: 1201px) {
+	#menu nav > ul > li > ul > li {
+  	width: 12.5%;
+	}
+}
+
+/* Layout */
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+} 
+html {
+  overflow-y: scroll;
+}
+body {
+  background: black;
+  color: #191919;
+  font-family: 'Droid Sans Mono', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  font-size: 18px; 
+  margin: 0 0 20px 0;
+}
+h1:before, h1:after {
+  content: "\20\26A1\20";
+}
+h2 {
+  font-size: 14px;
+  margin: 8px 0 8px 0;
+  padding: 0 0 8px 8px;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+  color:#6d6a6a;
+}
+p {
+	
+	color:#6d6a6a;
+}
+h3 {
+  font-size: 12px;
+  margin: 0 0 8px 0;
+  font-weight: bold;
+}
+p {
+  margin: 0 0 8px 0;
+}
+a {
+  color: #6d6a6a; /* Drink up! */
+  text-decoration: none;
+}
+section {
+	max-width: 600px;
+  margin: 40px auto 0 auto;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  height: 30px;
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1.5em;
+  background: #191919;
+ color:#decaff;
+  outline: none;
+}
+input[type="text"][required]:focus {
+  border-color: #00bafa;
+}
+input[type="text"][required]:focus + label[placeholder]:before {
+  color: #00bafa;
+}
+input[type="text"][required]:focus + label[placeholder]:before,
+input[type="text"][required]:valid + label[placeholder]:before {
+  transition-duration: 0.2s;
+  -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
+          transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+input[type="text"][required]:invalid + label[placeholder][alt]:before {
+  content: attr(alt);
+}
+input[type="text"][required] + label[placeholder] {
+  display: block;
+  pointer-events: none;
+  line-height: 1.25em;
+  margin-top: calc(-3em - 2px);
+  margin-bottom: calc((3em - 1em) + 2px);
+}
+input[type="text"][required] + label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #898989;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+img{
+	left:40%;
+	
+}
+div#more{
+	float:left;
+	text-align:left;
+}
+
+div#more2{
+	float:right;
+	text-align:right;
+}
+div#more p {
+	text-align:left;
+}
